@@ -12,7 +12,7 @@ int main(void) {
     // Get AMR's specification
     printf("Total payload weight (kg): ");
     scanf("%lf", &mass);
-    printf("Total numbers of wheel: ");
+    printf("Total number of the wheel: ");
     scanf("%d", &wheels);
     printf("Safety factor: ");
     scanf("%lf", &sf);
@@ -33,8 +33,8 @@ int main(void) {
     double f_motor = (torque * gear / radius) * wheels;
 
     // Print minimum required towing power and calculated motor power
-    printf("Required towing power at least: %lf\n", f_min);
-    printf("The maximum towing power of the motor: %lf\n", f_motor);
+    printf("Required towing power at least: %.2lf\n", f_min);
+    printf("The maximum towing power of the motor: %.2lf\n", f_motor);
 
     // print the validation result
     if (f_motor >= f_min) {
