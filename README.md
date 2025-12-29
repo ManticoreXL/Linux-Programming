@@ -7,4 +7,5 @@ AI융합로봇SW개발자 2기
 ### 과정
 1. Linux 환경구성 및 기초 (VMWare)
 2. C언어 Class 1
-3. 
+3. C언어 Class 2
+4. C언어 연구수업 1
