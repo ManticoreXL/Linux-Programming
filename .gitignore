@@ -6,6 +6,7 @@
 *.ko
 *.obj
 *.elf
+test
 
 # Linker output
 *.ilk
@@ -53,3 +54,4 @@ dkms.conf
 
 # debug information files
 *.dwo
+test
