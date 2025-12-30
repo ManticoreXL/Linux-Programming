@@ -1,3 +1,22 @@
+/* 
+This program determines the suitability of a Autonomous Mobile Rotot's motor.
+
+- Input:
+    * Total weight (kg)                 -> double   mass
+    * Total number of the wheel         -> int      wheels
+    * Safety factor                     -> double   sf
+    * Design margin                     -> double   margin
+    * Rated torque of the motor (N*m)   -> double   torque
+    * Gear reduction ratio              -> double   gear
+    * Radius of the wheel (m)           -> double   radius; 
+
+- Output:
+    * Minimum required traction (N)
+    * Calcualated power of the motor (N)
+    * Suitability of the given motor
+*/
+
+
 #include <stdio.h>
 
 int main(void) {
@@ -22,9 +41,9 @@ int main(void) {
     // Get specifications of motors and wheels
     printf("Rated torque of the motor: ");
     scanf("%lf", &torque);
-    printf("Rated gear ratio (N*m): ");
+    printf("Gear reduction ratio (N*m): ");
     scanf("%lf", &gear);
-    printf("Total radius of the wheel (m): ");
+    printf("Radius of the wheel (m): ");
     scanf("%lf", &radius);
 
     // Calculate towing power
@@ -33,8 +52,8 @@ int main(void) {
     double f_motor = (torque * gear / radius) * wheels;
 
     // Print minimum required towing power and calculated motor power
-    printf("Required towing power at least: %.2lf\n", f_min);
-    printf("The maximum towing power of the motor: %.2lf\n", f_motor);
+    printf("Minimum required towing power (N): %.2lf\n", f_min);
+    printf("Calcualated power of the motor (N): %.2lf\n", f_motor);
 
     // print the validation result
     if (f_motor >= f_min) {

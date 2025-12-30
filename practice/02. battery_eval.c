@@ -1,3 +1,22 @@
+/* 
+This program helps evaluate the given battery specification.
+
+- Input:
+    * Average current load (A)          -> double i_load
+    * Average vehicle velocity (km/h)   -> double vel
+    * Battery reserve ration (0-1)      -> double R
+    * Factory voltage (V)               -> double V
+    * Total capacity (Ah)               -> double C
+    * System efficiency (0-1)           -> double eta
+
+- Output:
+    * Total usable energy (Wh)
+    * Power consumption (W)
+    * Total runtime (h)
+    * Total range (km)
+*/
+
+
 #include <stdio.h>
 
 int main(void) {
@@ -10,7 +29,7 @@ int main(void) {
     scanf("%lf", &i_load);
     printf("Average velocity (km/h): ");
     scanf("%lf", &vel);
-    printf("Remaining percent (0-1)): ");
+    printf("Battery reserve ratio (0-1)): ");
     scanf("%lf", &R);
 
     // exception catch for R
