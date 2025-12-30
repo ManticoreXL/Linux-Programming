@@ -2,19 +2,19 @@
 This program calcuates the maximum traction and gradeability.
 
 - Input:
-    * Total mass (kg)                       -> double   mass
-    * Rated torque of the motor (Tm)        -> double   torque
-    * Total number of the driving motors    -> int      wheels
-    * Gear reduction ratio                  -> double   gear
-    * Motor driving efficienty (0-1)        -> double   eta
-    * Radius of the wheel (m)               -> double   radius
-    * Rolling resistance coefficient        -> double   c
-    * Safety factor (0-1)                   -> double   sf
+    * Total mass (kg)                       -> double   mass;
+    * Rated torque of the motor (Tm)        -> double   torque;
+    * Total number of the driving motors    -> int      wheels;
+    * Gear reduction ratio                  -> double   gear;
+    * Motor driving efficienty (0-1)        -> double   eta;
+    * Radius of the wheel (m)               -> double   radius;
+    * Rolling resistance coefficient        -> double   c;
+    * Safety factor (0-1)                   -> double   sf;
 
 - Output:
     * Total avaliable traction (N)
-    * Maximum climbing angle (degrees)
-    * Maximum gradeability (grade %)
+    * Maximum climbing angle (degree)
+    * Maximum gradeability (%)
 */
 
 
@@ -79,7 +79,7 @@ int main(void) {
     // Calculate maximum gradeability
     double grade = tan(theta_max) * 100;
 
-    // Print the calculated result
+    // Print the calculated results
     printf("Total avaliable traction (N): %.2lf\n", f_avail);
     printf("Maximum climbing angle (degrees): %.2lf\n", max_degree);
     printf("Maximum gradeability (grade %%): %.2lf\n", grade);

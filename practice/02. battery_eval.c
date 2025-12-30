@@ -2,12 +2,12 @@
 This program helps evaluate the given battery specification.
 
 - Input:
-    * Average current load (A)          -> double i_load
-    * Average vehicle velocity (km/h)   -> double vel
-    * Battery reserve ration (0-1)      -> double R
-    * Factory voltage (V)               -> double V
-    * Total capacity (Ah)               -> double C
-    * System efficiency (0-1)           -> double eta
+    * Average current load (A)          -> double i_load;
+    * Average vehicle velocity (km/h)   -> double vel;
+    * Battery reserve ration (0-1)      -> double R;
+    * Factory voltage (V)               -> double V;
+    * Total capacity (Ah)               -> double C;
+    * System efficiency (0-1)           -> double eta;
 
 - Output:
     * Total usable energy (Wh)
