@@ -16,6 +16,7 @@ This program performs warning system considering hysteresis .
 #define OFF 0
 #define ON 1
 
+
 int main(void) {
 
     int n;

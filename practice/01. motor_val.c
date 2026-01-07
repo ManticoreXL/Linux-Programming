@@ -16,8 +16,8 @@ This program determines the suitability of a Autonomous Mobile Rotot's motor.
     * Suitability of the given motor
 */
 
-
 #include <stdio.h>
+
 
 int main(void) {
 

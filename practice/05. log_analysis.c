@@ -12,6 +12,7 @@ This program counts rapid changes in driving velocity log.
 #include <stdlib.h>
 #include <time.h>
 
+
 int main(void) {
 
     int n, vel, delta;

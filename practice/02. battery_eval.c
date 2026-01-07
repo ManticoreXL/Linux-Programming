@@ -16,8 +16,8 @@ This program helps evaluate the given battery specification.
     * Total range (km)
 */
 
-
 #include <stdio.h>
+
 
 int main(void) {
 

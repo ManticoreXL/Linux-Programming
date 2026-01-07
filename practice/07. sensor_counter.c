@@ -17,8 +17,10 @@ This program determines sensor value by threshold.
 #include <unistd.h>
 #include <time.h>
 
+
 int process_value(const int value[], int label[], int n, int threshold);
 double get_average(const int label[], int n, int count);
+
 
 int main(void) {
 
@@ -63,6 +65,7 @@ int main(void) {
     return 0;
 }
 
+
 int process_value(const int value[], int label[], int n, int threshold) {
     
     if(value == NULL || label == NULL) {
@@ -89,6 +92,7 @@ int process_value(const int value[], int label[], int n, int threshold) {
 
     return count;
 }
+
 
 double get_average(const int label[], int n, int count) {
     if (label == NULL) {
